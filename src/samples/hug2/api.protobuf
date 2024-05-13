@@ -1,0 +1,17 @@
+syntax = "proto3";
+import "movie.proto";
+
+service MovieService {
+
+  option (hope.swagger.svc) =
+    { path: "/movie"; description: "Movie Service"; }
+
+  rpc Query (QueryMovieRequest)
+    returns (Movie) {
+    option (hope.swagger.operation) = {
+      get: "/query";
+      pageable: true;
+      description: "query all movie";
+    };
+  }
+}

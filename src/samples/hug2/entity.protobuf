@@ -1,0 +1,23 @@
+syntax = "proto3";
+message Movie {
+
+ string name = 1 [(hope.persistence.column) = {
+   name: "NAME", description: "Name of the movie",
+   type: VARCHAR, length: { value: 64}
+ }];
+
+ string description = 2 [(hope.persistence.column) = {
+   name: "DESCRIPTION", description: "description of the movie",
+   type: VARCHAR, length: { value: 255 }
+ }];
+
+ MovieLevel level = 3 [(hope.persistence.column) = {
+   name: "LEVEL", enum_type: STRING,
+   type: VARCHAR, length: { value: 16 }
+ }];
+
+ option (hope.persistence.table) = {
+   name: "MOVIE", description: "Movie",
+   wires: [IDENTIFIABLE, AUDITABLE]
+ };
+}

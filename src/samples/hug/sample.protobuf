@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+service OrderService {
+
+ rpc Place (PlaceOrderRequest)
+   returns (OrderPlacedResponse) {
+   option (hope.swagger.operation) = {
+     get: "/place";
+__CLASSES__
+     description: "place a new order";
+   };
+ }
+}

@@ -1,0 +1,25 @@
+{
+  "Movie": {
+    "properties": {
+      "id": {
+        "type": "number",
+        "format": "int64",
++       "description": "ID of the movie",
+        "example": "1001"
+      },
+      "remark": {
+        "type": "string",
+        "description": "Comment of the movie",
++       "x-hope-mock": {
++         "nature": "NAME",
++         "name": "nature"
++       }
++     },
+-     "link": {
+-       "type": "string",
+-       "description": "Extra linage"
+-     },
+      "required": [ "id"]
+    }
+  }
+}

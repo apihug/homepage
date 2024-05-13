@@ -1,0 +1,25 @@
+syntax = "proto3";
+import "level.proto";
+
+message Movie {
+
+  string name = 1 [(hope.swagger.field) = {
+    description: "name of the movie";
+    example: "The Lord of the Rings"
+    empty: FALSE;
+    mock: { nature: MOVIE }
+    max_length: { value: 64 }
+  }];
+
+  MovieLevel level = 2 [(hope.swagger.field) = {
+    description: "level of the movie";
+    example: "PG_13"
+    empty: FALSE;
+  }];
+
+  uint32 year = 3 [(hope.swagger.field) = {
+    description: "publish year";
+    example: "2022"
+  }];
+
+}

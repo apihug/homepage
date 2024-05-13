@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+service OrderService {
+  option (hope.swagger.svc) =
+    { path: "/order"; description: "Order Service"; }
+
+  rpc Place (PlaceOrderRequest)
+    returns (OrderPlacedResponse) {
+    option (hope.swagger.operation) = {
+      get: "/place";
+      description: "place a new order";
+    };
+  }
+
+  rpc Query (QueryOrderRequest)
+    returns (OrderView) {
+    option (hope.swagger.operation) = {
+      get: "/query";
+      pageable: true;
+      description: "query all live order";
+    };
+  }
+}

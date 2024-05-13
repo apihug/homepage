@@ -1,0 +1,12 @@
+<createTable remarks="Movie" tableName="MOVIE">
+  <column name="ID" type="BIGINT" autoIncrement="true">
+    <constraints nullable="false" primaryKey="true" unique="true"></constraints>
+  </column>
+  <column name="NAME" type="VARCHAR(64)" remarks="name of the movie">
+    <constraints nullable="false"></constraints>
+  </column>
+  <column name="DESCRIPTION" type="VARCHAR(255)" remarks="description of the movie">
+    <constraints nullable="false"></constraints>
+  </column>
+  <column name="CREATED" type="TIMESTAMP" remarks="Record deleted at"></column>
+</createTable>
