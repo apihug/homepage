@@ -45,6 +45,7 @@ export const documentationNav = {
     {title: 'Spring Core', href: '/docs/framework/spring-core'},
     {title: 'Spring Data', href: '/docs/framework/spring-data'},
     {title: 'Spring Security', href: '/docs/framework/spring-security'},
+    {title: 'Widget Authority', href: '/docs/framework/widget/authority'},
   ],
   "Tool Chain": [
     {title: 'Intro', href: '/docs/tool'},
@@ -56,10 +57,12 @@ export const documentationNav = {
     {title: 'Update Header & Cookie', href: '/docs/how/002_update_header_cookie'},
   ],
   Milestone:[
+    {title: 'Index', href: '/docs/milestone'},
     {title: 'Milestone-20240510', href: '/docs/milestone/milestone-20240510'},
     {title: 'Milestone-20240222', href: '/docs/milestone/milestone-20240222'},
   ],
   "ChangeLog":[
+    {title: 'Index', href: '/docs/changelog'},
     {title: 'SDK', href: '/docs/changelog/sdk'},
     {title: 'Plugin', href: '/docs/changelog/plugin'},
   ],
