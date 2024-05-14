@@ -20,17 +20,17 @@ export default class Document extends NextDocument {
         className="dark [--scroll-mt:9.875rem] lg:[--scroll-mt:6.3125rem] [scrollbar-gutter:stable]"
       >
         <Head>
-          <link rel="apple-touch-icon" sizes="180x180" href={v('/favicons/apple-touch-icon.png')} />
-          <link rel="icon" type="image/png" sizes="32x32" href={v('/favicons/favicon-32x32.png')} />
-          <link rel="icon" type="image/png" sizes="16x16" href={v('/favicons/favicon-16x16.png')} />
-          <link rel="manifest" href={v('/favicons/site.webmanifest')} />
-          <link rel="mask-icon" href={v('/favicons/safari-pinned-tab.svg')} color="#38bdf8" />
-          <link rel="shortcut icon" href={v('/favicons/favicon.ico')} />
-          <meta name="apple-mobile-web-app-title" content="ApiHug" />
-          <meta name="application-name" content="ApiHug" />
-          <meta name="msapplication-TileColor" content="#38bdf8" />
-          <meta name="msapplication-config" content={v('/favicons/browserconfig.xml')} />
-          <meta name="theme-color" content="#f8fafc" />
+          <link rel="apple-touch-icon" sizes="180x180" href={v('/favicons/apple-touch-icon.png')}/>
+          <link rel="icon" type="image/png" sizes="32x32" href={v('/favicons/favicon-32x32.png')}/>
+          <link rel="icon" type="image/png" sizes="16x16" href={v('/favicons/favicon-16x16.png')}/>
+          <link rel="manifest" href={v('/favicons/site.webmanifest')}/>
+          <link rel="mask-icon" href={v('/favicons/safari-pinned-tab.svg')} color="#38bdf8"/>
+          <link rel="shortcut icon" href={v('/favicons/favicon.ico')}/>
+          <meta name="apple-mobile-web-app-title" content="ApiHug"/>
+          <meta name="application-name" content="ApiHug"/>
+          <meta name="msapplication-TileColor" content="#38bdf8"/>
+          <meta name="msapplication-config" content={v('/favicons/browserconfig.xml')}/>
+          <meta name="theme-color" content="#f8fafc"/>
           <script
             dangerouslySetInnerHTML={{
               __html: `
@@ -45,15 +45,28 @@ export default class Document extends NextDocument {
               `,
             }}
           />
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-PXR19X43CS"></script>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                try {
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', 'G-PXR19X43CS');
+                } catch (_) {}
+              `,
+            }}
+          />
         </Head>
         <body
           className={clsx('antialiased text-slate-500 dark:text-slate-400', {
             'bg-white dark:bg-slate-900': !this.props.dangerousAsPath.startsWith('/examples/'),
           })}
         >
-          <Main />
-          <NextScript />
-          <script> </script>
+        <Main/>
+        <NextScript/>
+        <script></script>
         </body>
       </Html>
     )
