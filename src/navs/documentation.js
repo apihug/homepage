@@ -17,7 +17,8 @@ export const documentationNav = {
     },
   ],
   "Editor": [
-    {title: 'Intro', href: '/docs/idea',},
+    {title: 'Editor Intro', href: '/docs/idea',},
+    {title: 'FAQ', href: '/docs/idea/faq',},
     {title: 'Install Plugin', href: '/docs/idea/001-install-plugin',},
     {title: 'Start Project', href: '/docs/idea/002-start-project',},
     {title: 'Tool Window', href: '/docs/idea/003-tool-window',},
@@ -35,12 +36,12 @@ export const documentationNav = {
     {title: 'Editor', href: '/docs/idea/015-editor',},
   ],
   "Protocol Buffers": [
-    {title: 'Intro', href: '/docs/protobuf'},
+    {title: 'Proto Intro', href: '/docs/protobuf'},
     {title: 'Protobuf & OAS', href: '/docs/protobuf/proto-oas'},
     {title: 'Protobuf Option', href: '/docs/protobuf/proto-option'},
   ],
   "Framework": [
-    {title: 'Intro', href: '/docs/framework'},
+    {title: 'Framework Intro', href: '/docs/framework'},
     {title: 'Spring Common', href: '/docs/framework/spring-common'},
     {title: 'Spring Core', href: '/docs/framework/spring-core'},
     {title: 'Spring Data', href: '/docs/framework/spring-data'},
