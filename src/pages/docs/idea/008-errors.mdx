@@ -23,7 +23,7 @@ enum UserErrorsEnum {
 
   USER_EXIST = 0  [
     (hope.constant.field) = {
-      code: 1001023, message: "customer already exist", cn_message: "用户存在",
+      code: 1001023, message: "customer already exist", message2: "用户存在",
       error: {
         tips: "contact your admin",
         phase: DOMAIN,
@@ -60,7 +60,7 @@ public enum UserErrorsEnum implements Errors {
         USER_EXIST.setDomain("user");
         USER_EXIST.setCode(1001023);
         USER_EXIST.setDescription("customer already exist");
-        USER_EXIST.setDescriptionZhCN("用户存在");
+        USER_EXIST.setDescription2("用户存在");
         USER_EXIST.setTitle("USER_EXIST");
         USER_EXIST.setTips("contact your admin");
         USER_EXIST.setPhase(Phase.DOMAIN);
