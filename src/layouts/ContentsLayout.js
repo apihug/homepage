@@ -223,6 +223,9 @@ export function ContentsLayout({ children, meta, classes, tableOfContents, secti
         )}
       </ContentsContext.Provider>
 
+      <DocsFooter previous={prev} next={next}>
+      </DocsFooter>
+
       <div className="fixed z-20 top-[3.8125rem] bottom-0 right-[max(0px,calc(50%-45rem))] w-[19.5rem] py-10 overflow-y-auto hidden xl:block">
         {toc.length > 0 && (
           <TableOfContents tableOfContents={toc} currentSection={currentSection} />
