@@ -17,7 +17,7 @@
 +     },
 -     "link": {
 -       "type": "string",
--       "description": "Extra linage"
+-       "description": "External linkage"
 -     },
       "required": [ "id"]
     }
