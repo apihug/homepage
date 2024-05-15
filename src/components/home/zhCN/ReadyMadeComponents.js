@@ -45,8 +45,8 @@ export function ReadyMadeComponents() {
           <Widont>ApiHug让你走得更快、更远</Widont>
         </BigText>
         <Paragraph>
-          利用专业开发工具、直观的设计工具和代码生成，快速开发企业级组件。<br/>
-          现代化、轻量级的Java框架最大程度地提升了开发者在一个集成、强大的企业平台上的效能。
+          利用专业开发工具、直观的设计工具和代码生成，快速开发企业级组件；<br/>
+          现代化、轻量级的Java框架最大程度地提升了开发者在一个集成、强大的企业平台上的<code className="font-mono font-medium text-sky-500 dark:text-sky-400">效能</code>。
         </Paragraph>
         <Link href="/docs/how/001_support_upload_file" color="indigo" darkColor="gray">
           Learn more

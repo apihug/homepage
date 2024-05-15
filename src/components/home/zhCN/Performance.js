@@ -130,7 +130,8 @@ export function Performance() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
         <BigText>无缝集成到您工具链</BigText>
         <Paragraph>
-          基于 Gradle 的扩展，让你在应对不同大小：小到单个模块、大到企业级多模块项目时有游刃有余；<br/>
+          基于 <code className="font-mono font-medium text-sky-500 dark:text-sky-400">Gradle</code>
+          的扩展，让你在应对不同规模：小到单个模块、大到企业级多模块项目时有游刃有余；<br/>
           体验快速的自动化构建，和便捷高效的分发。
         </Paragraph>
         <Link href="/docs/tools" color="sky" darkColor="gray">

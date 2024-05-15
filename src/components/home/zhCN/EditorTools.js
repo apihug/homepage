@@ -46,7 +46,7 @@ export function EditorTools() {
         <Paragraph as="div">
           <p>
             智能的自动补全建议、代码检查和语法高亮显示；
-            <br/>所有这些都在您最爱的编辑器插件: The ApiHug - API design <code className="font-mono font-medium text-sky-500 dark:text-sky-400">Copilot</code> {' '}.
+            <br/>所有这些都在您最爱的编辑器插件: The ApiHug - API design <code className="font-mono font-medium text-sky-500 dark:text-sky-400">Copilot</code>{' '}。
           </p>
         </Paragraph>
         <Link href="/docs/idea" color="sky" darkColor="gray">

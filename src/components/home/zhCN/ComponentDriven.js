@@ -251,7 +251,7 @@ function AtApplySection() {
           数据库设计
         </h3>
         <Paragraph>
-          直观设计{' '} + {' '}高效的代码生成 {' '}={' '} 优雅数据库设计;<br/>
+          直观设计{' '} <code className="font-mono font-medium text-sky-500 dark:text-sky-400">+</code> {' '}高效的代码生成 {' '}<code className="font-mono font-medium text-sky-500 dark:text-sky-400">=</code>{' '} 优雅数据库设计;<br/>
           从API到数据访问，面面俱到。
         </Paragraph>
         <Link href="/docs/framework/spring-data" color="sky" darkColor="gray">
@@ -431,8 +431,8 @@ export function ComponentDriven() {
           <Widont>高效开发</Widont>
         </BigText>
         <Paragraph>
-          模块共享、版本控制、API仓库<br/>
-          标准API设计元语，面向协议，单信任源(Single Source of Truth)，统一IDE，让协同更高效。
+          模块共享、版本控制、API仓库；<br/>
+          标准API<code className="font-mono font-medium text-sky-500 dark:text-sky-400">设计元语</code>，面向协议，单信任源(Single Source of Truth)，统一IDE，让协同更高效。
         </Paragraph>
         <Link href="/docs/framework/spring-common" color="sky" darkColor="gray">
           了解更多<span className="sr-only">, 组件复用</span>
