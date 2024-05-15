@@ -432,7 +432,7 @@ export function ComponentDriven() {
         </BigText>
         <Paragraph>
           Module Sharing, Version Control, API Repository.<br/>
-          Standard API Design Metaphors, Protocol-driven, Single Source of Truth, Unified IDE for More Efficient Collaboration.
+          Standard API Design Meta Language, Specification-driven, Single Source of Truth, Unified IDE for More Efficient Collaboration.
         </Paragraph>
         <Link href="/docs/framework/spring-common" color="sky" darkColor="gray">
           Learn more<span className="sr-only">, reusing components</span>
