@@ -131,8 +131,8 @@ export function Performance() {
         <BigText>无缝集成到您工具链</BigText>
         <Paragraph>
           基于 <code className="font-mono font-medium text-sky-500 dark:text-sky-400">Gradle</code>
-          的扩展，让你在应对不同规模：小到单个模块、大到企业级多模块项目时有游刃有余；<br/>
-          体验快速的自动化构建，和便捷高效的分发。
+          的扩展，让你在应对不同规模：小到单个模块、大到企业级多模块项目时游刃有余；<br/>
+          无缝集成到现有设施, 快速自动化构建，便捷高效分发。
         </Paragraph>
         <Link href="/docs/tools" color="sky" darkColor="gray">
           了解更多<span className="sr-only">, 工具链</span>
