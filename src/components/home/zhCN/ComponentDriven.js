@@ -13,14 +13,14 @@ import { AnimatePresence, motion } from 'framer-motion'
 import clsx from 'clsx'
 import { useInView } from 'react-intersection-observer'
 
-import { lines as movieProto } from '../../samples/hug2/movie.protobuf?highlight'
-import { lines as movieLevelProto } from '../../samples/hug2/level.protobuf?highlight'
-import { lines as movieApiProto } from '../../samples/hug2/api.protobuf?highlight'
-import { lines as movieStub } from '../../samples/hug2/stub.json.txt?highlight=json'
-import { lines as movieVersions } from '../../samples/hug2/version.json.txt?highlight=json'
+import { lines as movieProto } from '../../../samples/hug2/movie.protobuf?highlight'
+import { lines as movieLevelProto } from '../../../samples/hug2/level.protobuf?highlight'
+import { lines as movieApiProto } from '../../../samples/hug2/api.protobuf?highlight'
+import { lines as movieStub } from '../../../samples/hug2/stub.json.txt?highlight=json'
+import { lines as movieVersions } from '../../../samples/hug2/version.json.txt?highlight=json'
 
-import { lines as entityProto } from '../../samples/hug2/entity.protobuf?highlight'
-import { lines as entityLiquibase } from '../../samples/hug2/liquibase.xml?highlight'
+import { lines as entityProto } from '../../../samples/hug2/entity.protobuf?highlight'
+import { lines as entityLiquibase } from '../../../samples/hug2/liquibase.xml?highlight'
 
 
 const movies = [
@@ -248,14 +248,14 @@ function AtApplySection() {
     <div className="mt-20 relative max-w-7xl mx-auto px-4 sm:mt-32 sm:px-6 md:px-8 lg:grid lg:grid-cols-12 lg:gap-x-8 lg:grid-rows-1">
       <div className="lg:col-span-7 xl:col-span-6 lg:row-end-1">
         <h3 className="text-3xl text-slate-900 font-extrabold dark:text-slate-200">
-          Database Design
+          数据库设计
         </h3>
         <Paragraph>
-          Intuitive Design + Efficient Code Generation = Elegant Database Design;<br/>
-          Comprehensive Coverage from API to Data Access.
+          直观设计{' '} + {' '}高效的代码生成 {' '}={' '} 优雅数据库设计;<br/>
+          从API到数据访问，面面俱到。
         </Paragraph>
         <Link href="/docs/framework/spring-data" color="sky" darkColor="gray">
-          Learn more<span className="sr-only">, data model</span>
+          了解更多<span className="sr-only">, 数据模型</span>
         </Link>
       </div>
 
@@ -428,14 +428,14 @@ export function ComponentDriven() {
     <section id="component-driven">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
         <BigText>
-          <Widont>Efficient Development.</Widont>
+          <Widont>高效开发</Widont>
         </BigText>
         <Paragraph>
-          Module Sharing, Version Control, API Repository.<br/>
-          Standard API Design Metaphors, Protocol-driven, Single Source of Truth, Unified IDE for More Efficient Collaboration.
+          模块共享、版本控制、API仓库<br/>
+          标准API设计元语，面向协议，单信任源(Single Source of Truth)，统一IDE，让协同更高效。
         </Paragraph>
         <Link href="/docs/framework/spring-common" color="sky" darkColor="gray">
-          Learn more<span className="sr-only">, reusing components</span>
+          了解更多<span className="sr-only">, 组件复用</span>
         </Link>
       </div>
       <GridLockup.Container className="mt-10 xl:mt-2" beams={8}>

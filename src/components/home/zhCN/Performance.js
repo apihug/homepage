@@ -1,15 +1,12 @@
-import { IconContainer, Caption, BigText, Paragraph, Link } from '@/components/home/common'
+import { BigText, Paragraph, Link } from '@/components/home/common'
 import { CodeWindow, getClassNameForToken } from '@/components/CodeWindow'
 import { TabBar } from '@/components/TabBar'
 import { Fragment, useCallback, useEffect, useRef, useState } from 'react'
 import clsx from 'clsx'
-import { GridLockup } from '../GridLockup'
+import { GridLockup } from '../../GridLockup'
 
-//import { lines as html } from '../../samples/performance.html?highlight'
-//import { lines as css } from '../../samples/performance.txt?highlight=css'
-
-import { lines as proto } from '../../samples/hug/sample.protobuf?highlight'
-import { lines as java } from '../../samples/hug/sample.java?highlight'
+import { lines as proto } from '../../../samples/hug/sample.protobuf?highlight'
+import { lines as java } from '../../../samples/hug/sample.java?highlight'
 
 import { useInView } from 'react-intersection-observer'
 import { animate } from 'framer-motion'
@@ -131,14 +128,13 @@ export function Performance() {
   return (
     <section id="performance">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
-        <BigText>Easy integration with your toolchain.</BigText>
+        <BigText>无缝集成到您工具链</BigText>
         <Paragraph>
-          Extend Gradle to handle projects of any scale, from single modules to enterprise-level multi-module
-          projects.<br/>
-          Experience faster excellence in building, automating, and delivering with ease and efficiency.
+          基于 Gradle 的扩展，让你针对不同大小的项目：小到单个模块，大到企业级多模块项目应对游刃有余；<br/>
+          体验快速的自动化构建，和便捷高效的分发。
         </Paragraph>
         <Link href="/docs/tools" color="sky" darkColor="gray">
-          Learn more<span className="sr-only">, optimizing for production</span>
+          了解更多<span className="sr-only">, 工具链</span>
         </Link>
       </div>
       <GridLockup

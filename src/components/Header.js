@@ -119,6 +119,11 @@ export function NavItems() {
   return (
     <>
       <li>
+        <Link href="/zhCN" className="hover:text-sky-500 dark:hover:text-sky-400" title={'中文'}>
+          CN
+        </Link>
+      </li>
+      <li>
         <Link href="/docs/start" className="hover:text-sky-500 dark:hover:text-sky-400">
           Docs
         </Link>

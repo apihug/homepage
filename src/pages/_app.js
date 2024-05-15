@@ -50,7 +50,7 @@ export default function App({ Component, pageProps, router }) {
   const description =
     meta.metaDescription ||
     meta.description ||
-    'ApiHug - Refine API Design & Development.'
+    'ApiHug - API Design & Develop New Paradigm.'
   let image = meta.ogImage ?? meta.image
   image = image
     ? `https://tailwindcss.com${image.default?.src ?? image.src ?? image}`
@@ -74,13 +74,13 @@ export default function App({ Component, pageProps, router }) {
       {meta.ogDescription && <OgDescription>{meta.ogDescription}</OgDescription>}
       <Head>
         <meta key="twitter:card" name="twitter:card" content="summary_large_image" />
-        <meta key="twitter:site" name="twitter:site" content="@tailwindcss" />
+        <meta key="twitter:site" name="twitter:site" content="@apihug" />
         <meta key="twitter:image" name="twitter:image" content={image} />
-        <meta key="twitter:creator" name="twitter:creator" content="@tailwindcss" />
+        <meta key="twitter:creator" name="twitter:creator" content="@apihug" />
         <meta
           key="og:url"
           property="og:url"
-          content={`https://tailwindcss.com${router.pathname}`}
+          content={`https://apihug.github.io${router.pathname}`}
         />
         <meta key="og:type" property="og:type" content="article" />
         <meta key="og:image" property="og:image" content={image} />

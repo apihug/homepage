@@ -62,17 +62,17 @@ function Header() {
         </div>
         <div className="relative max-w-5xl mx-auto pt-20 sm:pt-24 lg:pt-32">
           <h1 className="text-slate-900 font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-center dark:text-white">
-            Refine {' '} API {' '}Design {' '}&{' '} Development.
+            API {' '}Design {' '}&{' '}Develop {' '}{' '}New Paradigm
           </h1>
           <p className="mt-6 text-lg text-slate-600 text-center max-w-3xl mx-auto dark:text-slate-400">
-            <code className="font-mono font-medium text-sky-500 dark:text-sky-400">Design</code>{' '} first, Supercharge API Development with {' '}
-            <code className="font-mono font-medium text-sky-500 dark:text-sky-400">Descriptive </code>,{' '}
-            <code className="font-mono font-medium text-sky-500 dark:text-sky-400">Modularity </code>{' '} and {''}
+            <code className="font-mono font-medium text-sky-500 dark:text-sky-400">Design</code>{' '} first, Start a new API journey with highly {' '}
+            <code className="font-mono font-medium text-sky-500 dark:text-sky-400">Descriptive</code>,{' '}
+            <code className="font-mono font-medium text-sky-500 dark:text-sky-400">Modularized</code>{' '} and {' '}
             <code className="font-mono font-medium text-sky-500 dark:text-sky-400">
-              Visual
-            </code>{' '}tool.{' '} <code className="font-mono font-medium text-sky-500 dark:text-sky-400">Streamline</code>,{' '}
-            <code className="font-mono font-medium text-sky-500 dark:text-sky-400">Govern</code>, and {' '}
-            <code className="font-mono font-medium text-sky-500 dark:text-sky-400">Optimize </code> {' '}API Assets with Confidence.
+              Visualized
+            </code>{' '}experience.{' '} Integrate  <code className="font-mono font-medium text-sky-500 dark:text-sky-400">Distribution</code>,{' '}
+            <code className="font-mono font-medium text-sky-500 dark:text-sky-400">Monitoring</code>, and {' '}
+            <code className="font-mono font-medium text-sky-500 dark:text-sky-400">Management</code> {' '}of Your API Assets.
           </p>
           <div className="mt-6 sm:mt-10 flex justify-center space-x-6 text-sm">
             <NextLink
@@ -96,14 +96,14 @@ export default function Home() {
         <meta
           key="twitter:title"
           name="twitter:title"
-          content="ApiHug - Refine API Design & Development."
+          content="ApiHug - API Design & Develop New Paradigm."
         />
         <meta
           key="og:title"
           property="og:title"
-          content="ApiHug - Refine API Design & Development."
+          content="ApiHug - API Design & Develop New Paradigm."
         />
-        <title>ApiHug - Refine API Design & Development.</title>
+        <title>ApiHug - API Design & Develop New Paradigm.</title>
       </Head>
       <div className="overflow-hidden">
         <Header />

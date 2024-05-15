@@ -1,14 +1,4 @@
 import { Fragment, useEffect, useRef, useState } from 'react'
-import {
-  IconContainer,
-  Caption,
-  BigText,
-  Paragraph,
-  Link,
-  Widont,
-  themeTabs,
-} from '@/components/home/common'
-import { Tabs } from '@/components/Tabs'
 import { CodeWindow, getClassNameForToken } from '@/components/CodeWindow'
 import { HtmlZenGarden } from '@/components/HtmlZenGarden'
 import clsx from 'clsx'
