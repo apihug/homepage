@@ -16,12 +16,12 @@ function Header() {
             API {' '}设计 {' '}&{' '} 开发{' '}{' '}新范式
           </h1>
           <p className="mt-6 text-lg text-slate-600 text-center max-w-3xl mx-auto dark:text-slate-400">
-            <code className="font-mono font-medium text-sky-500 dark:text-sky-400">设计</code>{' '}优先，{' '}{' '}高度 {' '}
+            <code className="font-mono font-medium text-sky-500 dark:text-sky-400">设计</code>{' '}优先，{' '}{' '}体验高度 {' '}
             <code className="font-mono font-medium text-sky-500 dark:text-sky-400">语言化</code>、{' '}
             <code className="font-mono font-medium text-sky-500 dark:text-sky-400">模块化</code>{' '}和{' '}
             <code className="font-mono font-medium text-sky-500 dark:text-sky-400">
               可视化
-            </code>{' '} 体验新API之旅<br/> 一体化{' '}<code className="font-mono font-medium text-sky-500 dark:text-sky-400">分发</code>、{' '}
+            </code>{' '} 新API之旅<br/> 一体化{' '}<code className="font-mono font-medium text-sky-500 dark:text-sky-400">分发</code>、{' '}
             <code className="font-mono font-medium text-sky-500 dark:text-sky-400">监控</code>、 {' '}
             <code className="font-mono font-medium text-sky-500 dark:text-sky-400">管理</code> {' '}您的API资产
           </p>
