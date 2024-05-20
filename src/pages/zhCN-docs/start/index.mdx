@@ -72,10 +72,10 @@ import { SnippetGroup } from '@/components/SnippetGroup'
 
 ### 03-Spring设置
 
-This is a standard [Start Spring](https://start.spring.io/) configuration:
+Spring 配置，等同 [Start Spring](https://start.spring.io/) 习惯:
 
-1. Select Type
-2. Choice the components for example `Spring Web`
+1. 类型筛选
+2. 选择模块，比如: `Spring Web`
 
 <img src={require('@/img/editor/004_spring_settings.gif').default.src} alt="ApiHug Project Spring Settings" width={2316} height={1768} className="rounded-lg" />
 
@@ -105,14 +105,14 @@ This is a standard [Start Spring](https://start.spring.io/) configuration:
 ```shell
 +---gradle
 |   |   libs.versions.toml  (1)
-+---demo-app
++---demo-app  (2)
 |   |   build.gradle
 |   \---src
 |       \---main
 |           +---java
 |           |   \---com
 |           |       \---apihug
-|           |           \---demo  (2)
+|           |           \---demo  
 |           |               |   DemoAppApplication.java
 |           |               +---domain
 |           |               \---service
