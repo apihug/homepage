@@ -1,0 +1,50 @@
+---
+title: Shortcut used in ApiHug IDEA plugin
+description: ApiHug IDEA plugin how to use shortcut speed up the edit
+---
+
+since `0.2.7`+
+
+⚠️Please update and upgrade the ApiHug plugin in a timely manner.⚠️
+
+💝 Plugin home: [ApiHug - API design Copilot](https://plugins.jetbrains.com/plugin/23534-apihug--api-design-copilot)
+
+<div>
+  <iframe
+    src="https://plugins.jetbrains.com/embeddable/install/23534"
+    border="0"
+    height={'48px'}
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+  ></iframe>
+</div>
+
+😆 Video guide:
+
+1. [ApiHug101-Bilibili](https://space.bilibili.com/666522636)
+2. [ApiHug101 Youtube](https://youtube.com/@ApiHug?si=C1yw0poHA01zbmyj)
+
+
+## Shortcut
+
+Preconditions:
+1. Must be `proto` kind file;
+2. Must mark with ApiHug extend optional， for example: `option (hope.domain.kind) = IDL` for `IDL` file;
+
+Seems almost all the shortcut keys are occupied, so we have less option to choice:
+
+| Shortcut               | Comment              | Tip                     | Preconditions |
+|------------------------|----------------------|-------------------------|---------------|
+| `ctl + alt +shift + M` | Add Message          | `M` for Message         | `BEAN`        |
+| `ctl + alt +shift + F` | Add Field            | `F` for Field           | `BEAN`        |
+| `ctl + alt +shift + K` | Add Field(Reference) | `K` for ?               | `BEAN`        |
+| `ctl + alt +shift + U` | Add Enum             | `U` for Unique constant | `ENUM`        |
+| `ctl + alt +shift + A` | Add Enum Field       | `A` for ?               | `ENUM`        |
+| `ctl + alt +shift + X` | Add Error            | `X` for X - wrong       | `ERROR`       |
+| `ctl + alt +shift + Z` | Add Error Field      | `Z` for ?               | `ERROR`       |
+| `ctl + alt +shift + R` | Add Service          | `R` for Resource        | `IDL`         |
+| `ctl + alt +shift + P` | Add Path             | `P` for Path            | `IDL`         |
+| `ctl + alt +shift + Y` | Add Entity           | `Y` for Yummy 😋?       | `ENTITY`      |
+| `ctl + alt +shift + O` | Add Entity Field     | `O` for ?               | `ENTITY`      |
+
+Also refer to the [Editor Assistant](/zhCN-docs/idea/015-editor)

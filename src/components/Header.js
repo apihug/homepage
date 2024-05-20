@@ -8,13 +8,13 @@ import { useEffect, useState } from 'react'
 import clsx from 'clsx'
 import { ThemeSelect, ThemeToggle } from './ThemeToggle'
 
-function Featured() {
+function Featured2() {
   return (
     <a
-      href="/docs/changelog/sdk"
+      href="/zhCN-docs/start"
       className="ml-3 text-xs leading-5 font-medium text-sky-600 dark:text-sky-400 bg-sky-400/10 rounded-full py-1 px-3 hidden xl:flex items-center hover:bg-sky-400/20"
     >
-      <strong className="font-semibold">SDK v0.9.9</strong>
+      <strong className="font-semibold">中文</strong>
       <svg
         width="2"
         height="2"
@@ -24,7 +24,44 @@ function Featured() {
       >
         <circle cx="1" cy="1" r="1" />
       </svg>
-      <span className="ml-2">Update second message name, and optimize</span>
+      <span className="ml-2">文档</span>
+      <svg
+        width="3"
+        height="6"
+        className="ml-3 overflow-visible text-sky-300 dark:text-sky-400"
+        aria-hidden="true"
+      >
+        <path
+          d="M0 0L3 3L0 6"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
+    </a>
+  )
+}
+
+
+function Featured() {
+  return (
+    <a
+      href="/docs/changelog/sdk"
+      className="ml-3 text-xs leading-5 font-medium text-sky-600 dark:text-sky-400 bg-sky-400/10 rounded-full py-1 px-3 hidden xl:flex items-center hover:bg-sky-400/20"
+    >
+      <strong className="font-semibold">SDK v0.9.9 + Plugin 0.4.1</strong>
+      <svg
+        width="2"
+        height="2"
+        fill="currentColor"
+        aria-hidden="true"
+        className="ml-2 text-sky-600 dark:text-sky-400/70"
+      >
+        <circle cx="1" cy="1" r="1" />
+      </svg>
+      <span className="ml-2">New Features</span>
       <svg
         width="3"
         height="6"
@@ -119,7 +156,7 @@ export function NavItems() {
   return (
     <>
       <li>
-        <Link href="/zhCN" className="hover:text-sky-500 dark:hover:text-sky-400" title={'中文'}>
+        <Link href="/zhCN" className="hover:text-sky-500 dark:hover:text-sky-400" title={'中文主页'}>
           CN
         </Link>
       </li>
@@ -211,6 +248,7 @@ export function Header({hasNav = false, navIsOpen, onNavToggle, title, section})
                 <Logo className="w-auto h-5" />
               </Link>
               <Featured />
+              <Featured2 />
               <div className="relative hidden lg:flex items-center ml-auto">
                 <nav className="text-sm leading-6 font-semibold text-slate-700 dark:text-slate-200">
                   <ul className="flex space-x-8">

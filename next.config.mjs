@@ -34,10 +34,11 @@ const defaultConfig = resolveConfig(tailwindDefaultConfig)
 
 const fallbackLayouts = {
   'src/pages/docs/**/*': ['@/layouts/DocumentationLayout', 'DocumentationLayout'],
+  'src/pages/zhCN-docs/**/*': ['@/layouts/ZhCNDocumentationLayout', 'ZhCNDocumentationLayout'],
 }
 
 const fallbackDefaultExports = {
-  'src/pages/{docs,components}/**/*': ['@/layouts/ContentsLayout', 'ContentsLayout'],
+  'src/pages/{docs,zhCN-docs,components}/**/*': ['@/layouts/ContentsLayout', 'ContentsLayout'],
   'src/pages/blog/**/*': ['@/layouts/BlogPostLayout', 'BlogPostLayout'],
   'src/pages/careers/**/*': ['@/layouts/JobPostingLayout', 'JobPostingLayout'],
   'src/pages/showcase/**/*': ['@/layouts/ShowcaseLayout', 'ShowcaseLayout'],
