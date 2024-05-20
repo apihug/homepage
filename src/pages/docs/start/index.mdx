@@ -4,6 +4,7 @@ description: This page outlines how you can start using ApiHug to start a new AP
 ---
 
 import { TipGood } from '@/components/Tip'
+import { SnippetGroup } from '@/components/SnippetGroup'
 
 This page outlines how you can use ApiHug to create quick demos in **15 minutes**.
 
@@ -86,7 +87,7 @@ Eventually click **Create -> Open Project** to open the project:
 
 <a target="_blank" href="https://search.maven.org/artifact/com.apihug/it-bom"><img src="https://img.shields.io/maven-central/v/com.apihug/it-bom.svg?label=Maven%20Central" /></a>
 
-Then you can upgrade them manually:
+For a exist project, then you can upgrade them manually:
 
 1. YOUR_PROJECT > gradle > **libs.versions.toml**
 2. `apihug = "0.9.2-RELEASE"` update to latest version
@@ -97,6 +98,140 @@ Follow the IDEA's instruction:
 2. two modules `demo-app-proto` & `demo-app` should be recognized
 
 <img src={require('@/img/editor/005_load_project.gif').default.src} alt="ApiHug Load Project" width={2316} height={1768} className="rounded-lg" />
+
+The simplest project layout will be like ([simplest-demo](https://github.com/apihug/simplest-demo)):
+
+```shell
++---gradle
+|   |   libs.versions.toml  (1)
++---demo-app
+|   |   build.gradle
+|   \---src
+|       \---main
+|           +---java
+|           |   \---com
+|           |       \---apihug
+|           |           \---demo  (2)
+|           |               |   DemoAppApplication.java
+|           |               +---domain
+|           |               \---service
+|           \---resources
+|               |   hope-stub.json  (3)
+|
++---demo-app-proto (4)
+|   |   build.gradle
+|   \---src
+|       \---main
+|           +---proto
+|           |   \---com
+|           |       \---apihug
+|           |           \---demo
+|           |               \---proto
+|           |                   +---api
+|           |                   \---infra
+|           \---resources
+|                   hope-wire.json (5)
+````
+
+| File                         | Comment                          |
+|------------------------------|----------------------------------|
+| **(1)** `libs.versions.toml` | Version toml configuration       |
+| **(2)** `demo-app`           | Application module               |
+| **(3)** `hope-stub.json`     | Application module configuration |
+| **(4)** `demo-app-proto`     | Protocol module                  |
+| **(5)** `hope-wire.json`     | Protocol module configuration    |
+
+
+<SnippetGroup>
+
+```toml {{ filename: 'libs.versions.toml' }}
+# libraries
+apihug = "0.9.9-RELEASE"
+# plugins
+springBoot = "3.2.5"
+springDependency = "1.1.4"
+
+#Apihug Common
+apihugBom = { group = "com.apihug", name = "it-bom", version.ref = "apihug" }
+
+#Spring plugin
+springBoot = { id = "org.springframework.boot", version.ref = "springBoot" }
+springDependency = { id = "io.spring.dependency-management", version.ref = "springDependency" }
+```
+  
+```gradle {{ filename: 'demo-app' }}
+plugins {
+  id "java"
+  alias(libs.plugins.springBoot)
+  alias(libs.plugins.springDependency)
+  alias(libs.plugins.hopeStub)
+  alias(libs.plugins.liquibase)
+}
+  
+hopeStub {
+  debug = false
+}
+
+dependencies {
+  //Hope START
+  implementation project(':demo-app-proto')
+  implementation 'org.springframework.boot:spring-boot-starter-web'
+}
+```
+  
+```json {{ filename: 'hope-stub.json' }}
+  {
+    "packageName": "com.apihug.demo",
+    "name": "demo-app",
+    "domain": "demo",
+    "proto": {
+    "artifact": {
+    "groupId": "com.apihug",
+    "artifactId": "demo-app-proto",
+    "version": "0.1.1-SNAPSHOT"
+  },
+    "module": "demo-app-proto",
+    "domain": "demo",
+    "applied": true
+  },
+    "dependencies": [
+    ]
+  }  
+```
+
+```gradle {{ filename: 'demo-app-proto' }}
+plugins {
+  id "java-library"
+  alias(libs.plugins.hopeWire)
+}
+  
+hopeWire {
+  keepProto = false
+  verbose = false
+}
+  
+```
+
+```json {{ filename: 'hope-wire.json' }}
+  {
+    "packageName": "com.apihug.demo",
+    "name": "demo-app-proto",
+    "application": "demo-app",
+    "domain": "demo",
+    "persistence" : {
+    "identifyType" : "LONG",
+    "tenantType" : "LONG"
+  },
+    "authority" : {
+    "enumClass" : "com.apihug.demo.proto.infra.settings.DemoAuthorityEnum",
+    "codePrefix" : 10240000
+  },
+    "createdAt": "2024-05-19",
+    "createdBy" : "admin"
+  }
+```  
+
+</SnippetGroup>
 
 #### 04.1-Wire
 
