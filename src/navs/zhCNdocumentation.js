@@ -12,6 +12,7 @@ export const documentationNav = {
   "Editor": [
     {title: '插件介绍', href: '/zhCN-docs/idea',},
     {title: 'FAQ', href: '/zhCN-docs/idea/faq',},
+    {title: '快捷键', href: '/zhCN-docs/idea/000-shortcut',},
     {title: '安装插件', href: '/zhCN-docs/idea/001-install-plugin',},
     {title: '开启项目', href: '/zhCN-docs/idea/002-start-project',},
     {title: '工具窗口', href: '/zhCN-docs/idea/003-tool-window',},

@@ -12,6 +12,7 @@ export const documentationNav = {
   "Editor": [
     {title: 'Editor Intro', href: '/docs/idea',},
     {title: 'FAQ', href: '/docs/idea/faq',},
+    {title: 'Shortcut', href: '/docs/idea/000-shortcut',},
     {title: 'Install Plugin', href: '/docs/idea/001-install-plugin',},
     {title: 'Start Project', href: '/docs/idea/002-start-project',},
     {title: 'Tool Window', href: '/docs/idea/003-tool-window',},
